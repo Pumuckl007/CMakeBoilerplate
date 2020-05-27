@@ -11,7 +11,7 @@ else
 fi
 make                        #make to rebuild incase something has changed
 if [ $? -eq 0 ]; then
-  ./test/P1_tests   #run tests if we built sucessfully
+  ./test/PROJECT_NAME_tests   #run tests if we built sucessfully
 fi
 while inotifywait -q -r -e close_write ../ ../test/ #check for src update
 do
